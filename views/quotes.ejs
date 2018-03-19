@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Here are the awesome quotes!</h1>
+
+    <ul>
+      <% for (var x in user) { %>
+        <hr>
+        <li>QUOTE: "<%= user[x].quote %>"</li>
+        <li>-<%= user[x].name %> at <%= moment(user[x].stampdate).format('LLL') %></li>
+        <hr>
+        <% } %>
+    </ul>
+    
+    <a href="/"><button>Back</button></a>
+
+
+  </body>
+</html>
